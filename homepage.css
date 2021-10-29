@@ -7,10 +7,27 @@ h1 {
     font-family: monospace;
     text-align: center;
 }
+h3 {
+    color: white;
+    text-decoration: underline overline white;
+    font-family: monospace;
+    text-align: center;
+}
 h4 {
     color: white;
     font-family: monospace;
     text-align: center;
+}
+h5 {
+    color: white;
+    font-family: monospace;
+    text-align: center;
+}
+
+.about_me {
+    margin-top: 5%;
+    margin-left:3%;
+    margin-right: 3%;
 }
 
 .my_headshot{
