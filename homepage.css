@@ -25,6 +25,8 @@ h5 {
 }
 
 .about_me {
+    border: 2px solid white;
+    border-color: white;
     margin-top: 5%;
     margin-left:3%;
     margin-right: 3%;
