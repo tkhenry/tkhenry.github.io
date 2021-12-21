@@ -5,28 +5,195 @@
             <meta name="viewport" content="width=device-width, initial-scale=1">
             <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
             <link href="homepage.css" rel="stylesheet">
+            <script src="https://kit.fontawesome.com/44c0c62414.js" crossorigin="anonymous"></script>
             <title>Tom Henry</title>
     </head>
     <body>
-        <div class="headshot-container">
-            <img src="github_5-25-21.jpeg" alt="Tom Henry" class="my_headshot">
-        </div>
-        <div>
-            <h1>Tom Henry</h1>
-            <h4>Software Engineer</h4>
-        </div>
-        <div class="about_me">
-            <h3>
-                ABOUT ME 
-            </h3>
-            <h5>
-                I am a junior at the University of Notre Dame studying computer science. 
-                Throughout my studies, I have really enjoyed the fast paced and creative environment of software development. 
-                Outside of CS, I am a stand-up comic and and love to write and perform jokes to a crowd, as well as perform improv comedy.
-                Also, although it can be difficult to watch sometimes, I am a Chicago sports fan who looks forward to watching games with friends.
-            </h5>
-        </div>
-        
-        
+        <section id="main">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                      <a class="nav-item nav-link" href="#">Home</a>
+                      <a class="nav-item nav-link" href="#resume">Resume</a>
+                      <a class="nav-item nav-link" href="#projects">Projects</a>
+                    </div>
+                </div>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                    <div class="social">
+                        <a href="https://github.com/tkhenry"><i class="fab fa-github-square"></i></a>
+                        <a href="https://www.linkedin.com/in/tom-henry-20b90b1b7/"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </nav>
+            <div class="name">
+                <h1>Tom Henry</h1>
+                <p>Software Engineer</p>
+                <p class="details">
+                    I am a software engineer from the University of Notre Dame, comedian, and Chicago sports fan!
+                    In my personal website you will be able to find information regarding my professional experience,
+                    programming projects, accolades, and more!
+                </p>
+            </div>
+        </section>
+        <section id="resume" href="#resume">
+            <div class="heading">
+                <h2>RESUMÉ</h2>
+            </div>
+            <div class="grid">
+                <div class="container">
+                    <h3 style="text-align: center;">EDUCATION</h3>
+                    <h5>University of Notre Dame</h5>
+                    <h6>B.S. Computer Science (Expected Graduation: May 2023)</h6>
+                    <ul>
+                        <li>GPA: 3.815</li>
+                        <li>
+                            Relavent Coursework
+                            <ul>
+                                <li>
+                                    Data Structures, Logic Design, Discrete Mathematics, Linear Algebra, 
+                                    Systems Programming, Computer Architecture, Theory of Computing
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            Honors and Awards
+                            <ul>
+                                <li>
+                                    Dean's List:
+                                    Represented the top 30% of the College of Engineering
+                                </li>
+                                <li>
+                                    Stephen Saunders Memorial Award:
+                                    Awarded to a freshman who best displays a strong sense of spirit,
+                                    faith, dedication to academics, enthusiasm for athletics, and positive 
+                                    influence on their dorm community.
+                                </li>
+                            </ul>
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="container">
+                    <h3 style="text-align: center;">EXPERIENCE</h3>
+                    <h5>Misinformation Early Warning System (MEWS)</h5>
+                    <h8>Software Engineering Intern / Spring 2021 - present</h8>
+                    <ul>
+                        <li>
+                            Charged with enhancing optical character recognition, image object detection, 
+                            image manipulation, and image similarity tasks to help detect social media misinformation 
+                            trends in Indonesia
+                        </li>
+                        <li>
+                            Integrated a distributed task manager to increase efficiency of project pipeline.
+                        </li>
+                        <li>
+                            Presented MEWS at NeurIPS 2021 conference
+                        </li>
+                    </ul>
+                    <h5>Program Manager – Notre Dame Preternship</h5>
+                    <h8>Program Manager / Spring 2021</h8>
+                    <ul>
+                        <li>
+                            Managed two teams of 3-4 programmers in the design, plan, and execution of 
+                            software projects for industry representatives from Google and IBM
+                        </li>
+                        <li>
+                            Led weekly scrums, sprints, and code reviews for both teams.
+                        </li>
+                    </ul>
+                    
+                    <h5>Pariveda/A2D Software Engineering Intern</h5>
+                    <h8>Software Engineering Intern / Winter 2021</h8>
+                    <ul>
+                        <li>
+                            Implemented a cross platform application using React Native to assist 
+                            addicts with their healing process utilizing A2D’s addiction curriculum.
+                        </li>
+                        <li>
+                            Developed platform to connect addicts with addiction support counselors.
+                        </li>
+                    </ul>
+
+                    <h5>Teachers Assistant, Data Structures</h5>
+                    <h8>TA / Spring 2021</h8>
+                    <ul>
+                        <li>
+                            Focused on facilitating student understanding of material for a Data Structures course taught in C++.
+                        </li>
+                        <li>
+                            Assigned office and lab support hours to help lead students to excel in the course.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+        </section>
+        <section id="projects" href="#projects">
+            <div class="heading">
+                <div class="grid">
+                    <div class="container green">
+                        <h3 style="text-align: center;">PROJECTS</h3>
+                        <h5>Vendor Analysis Dashboard</h5>
+                        <ul>
+                            <li>
+                                <p>
+                                    Developed, implemented, and tested an application to score vendors and produce 
+                                    data visualizations in Python for decreasing overhead and increasing leverage with 
+                                    suppliers for an external industrial representative from SpaceX.
+                                </p>
+                                <a class="btn btn-outline-primary" href="https://github.com/gavinuhran/SpaceX-Preternship-Project">GitHub Repo</a>
+                            </li>
+                        </ul>
+                        <h5>Chicago Crime Visualized</h5>
+                        <ul>
+                            <li>
+                                <p>
+                                    Independently developed and tested a map in Python illustrating the information 
+                                    and location of specific crimes occurring in the greater Chicagoland area over 
+                                    variable time ranges.
+                                </p>
+                            </li>
+                        </ul>
+
+                    </div>
+                    <div class="container green">
+                        <h3 style="text-align: center;">ACTIVITIES</h3>
+                        <h5>ND Data Club</h5>
+                        <ul>
+                            <li>
+                                    Created a content-based movie recommendation system using a large dataset 
+                                    from IMDB and Wikipedia using Python.
+                            </li>
+                            <li>
+                                    Club focused toward data science and machine learning exploration.
+                            </li>
+                        </ul>
+                        <h5>Foreign Object Debris Detection Research</h5>
+                        <h9>Project Manager - Student International Business Council</h9>
+                        <ul>
+                            <li>
+                                Nominated by Notre Dame’s largest student organization to lead a team of 
+                                engineers and business students in delivering a design for an optimal 
+                                foreign object detection system for Pratt & Whitney.
+                            </li>
+                            <li>
+                                Managed and coordinated weekly research tasks for a team of 8 engineers.
+                            </li>
+                        </ul>
+                        <h5>Cybersecurity Case Study</h5>
+                        <h9>Travel Team Member - Student International Business Council</h9>
+                        <ul>
+                            <li>
+                                Formulated and presented a short-term and long-term solution for 
+                                a cybersecurity breach case study. Presented to PricewaterhouseCooper in Chicago, IL.
+                            </li>
+                        </ul>
+
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+          
     </body>
 </html>

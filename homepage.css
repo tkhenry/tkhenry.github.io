@@ -1,44 +1,99 @@
-body {
-    background-color: black;
+body{
+  background-color: whitesmoke;
+}
+nav{
+  justify-content: space-between;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 500;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px 30px;
+  z-index: 1;
 }
 
-h1 {
-    color: white;
-    font-family: monospace;
-    text-align: center;
-}
-h3 {
-    color: white;
-    text-decoration: underline overline white;
-    font-family: monospace;
-    text-align: center;
-}
-h4 {
-    color: white;
-    font-family: monospace;
-    text-align: center;
-}
-h5 {
-    color: white;
-    font-family: monospace;
-    text-align: center;
+.logo{
+  font-size: 25px;
+  font-weight: bold;
+  color: white;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-decoration: none;
+  user-select: none;
 }
 
-.about_me {
-    border: 2px solid white;
-    border-color: white;
-    margin-top: 5%;
-    margin-left:3%;
-    margin-right: 3%;
+.name{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  width: 500px;
+  position: absolute;
+  right: 20%;
+  top: 50%;
+  transform: translate(-10%, -80%);
+}
+.name h1{
+  font-size: 60px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  letter-spacing: 2px;
 }
 
-.my_headshot{
-    display: block;
-    margin-top: 2%;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 50%;
-    border: 3px solid white;
-    height: 30%;
-    width: 30%;
+#main{
+  width: 100%;
+  height: 100vh;
+  box-sizing: border-box;
+  background-color: whitesmoke;
+  position: relative;
+  background-image: url("headshot_crop.png");
+  background-repeat: no-repeat;
+  background-size: 350px;
+  background-position: left 15% bottom 25%;
+}
+
+.social a{
+  margin: 6px 6px;
+}
+
+.social i{
+  color: lightgrey;
+  font-size: 30px;
+}
+
+.social a:hover i{
+  color: white;
+  transition: all ease 0.4s;
+}
+
+#resume{
+  width: 100%;
+  height: 100vh;
+  box-sizing: border-box;
+  background-image: linear-gradient(whitesmoke, white);
+}
+
+#projects{
+  width: 100%;
+  height: 100vh;
+  box-sizing: border-box;
+  background-image: linear-gradient(white, whitesmoke);
+}
+
+.heading h2{
+  text-align: center;
+  text-decoration: underline;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-gap: 20px;
+  padding: 1% 1% 1% 1%;
+}
+
+.grid .container{
+  border-radius: 10px;
+  border: 2px solid navy;
+}
+
+.grid .container.green{
+  border-radius: 10px;
+  border: 2px solid green;
 }
