@@ -16,6 +16,7 @@
                       <a class="nav-item nav-link" href="#">Home</a>
                       <a class="nav-item nav-link" href="#resume">Resume</a>
                       <a class="nav-item nav-link" href="#projects">Projects</a>
+                      <a class="nav-item nav-link" href="#research">Research</a>
                     </div>
                 </div>
                 <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
@@ -192,6 +193,50 @@
 
                     </div>
                     
+                </div>
+            </div>
+        </section>
+        <section id="research" href="#research">
+            <div class="heading">
+                <h2>RESEARCH</h2>
+            </div>
+
+            <img src="mews_logo.png" class="rounded mx-auto d-block">
+            <div class="grid2">
+                <div class="container">
+                    <h2>Misinformation Early Warning System</h2>
+                    <h4>Notre Dame AI Lab - Undergraduate Research Assistant</h4>
+
+                    <h5>What is MEWS?</h6>
+                    <p>
+                        The MEWS (Misinformation Early Warning System) helps identify misinformation trends 
+                        in real time as they occur on social media. MEWS is intended to be used by journalists, 
+                        civil society organizations, and some government agencies.
+                    </p>
+                    <h5>How does it work?</h6>
+                    <p>
+                        MEWS operates through a distributed task management platform called celery, which allows us to 
+                        queue tasks for compute nodes to operate on asynchronously. We call this the chain. The chain 
+                        starts by pulling images and metadata from social media platforms and storing them into our database. 
+                        Next, we perform optical character recognition on these images to store text that was placed over or 
+                        within an image. After that, our images are sent through manipulation detection or ADQ2 to spot 
+                        potential image manipulations. We then utilize detectron2 from Facebook Research to recognize objects 
+                        within the image that we will use in the provenance portion of the pipeline later. Then, using Insight 
+                        Face and Trenton Fords WikiFace’s package, we are able to detect and sometimes recognize people in an 
+                        image. We then find features in the image that we can compare across the entire database. Finally, we 
+                        generate a graph using similarities detected within the image itself, text pulled from OCR, objects 
+                        found in the image, people, captions, and associated hashtags.
+                    </p>
+                </div>
+                <div class="mews_images">
+                    <img src="mews_dashboard.png" class="img-fluid">
+                    <h8 style="text-align: center; font-style:italic">
+                        Overview page displaying clusters of potential misinformation trends in the Indonesian context
+                    </h8>
+                    <img src="ADQ2.png" class="img-fluid">
+                    <h8 style="text-align: center; font-style:italic">
+                        Image manipulation heatmap
+                    </h8>
                 </div>
             </div>
         </section>

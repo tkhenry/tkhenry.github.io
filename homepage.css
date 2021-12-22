@@ -40,7 +40,7 @@ nav{
   width: 100%;
   height: 100vh;
   box-sizing: border-box;
-  background-color: whitesmoke;
+  background-image: linear-gradient(lightgrey, whitesmoke);
   position: relative;
   background-image: url("headshot_crop.png");
   background-repeat: no-repeat;
@@ -66,14 +66,21 @@ nav{
   width: 100%;
   height: 100vh;
   box-sizing: border-box;
-  background-image: linear-gradient(whitesmoke, white);
+  background-color: whitesmoke;
 }
 
 #projects{
   width: 100%;
   height: 100vh;
   box-sizing: border-box;
-  background-image: linear-gradient(white, whitesmoke);
+  background-color: whitesmoke;
+}
+
+#research{
+  width: 100%;
+  height: 100vh;
+  box-sizing: border-box;
+  background-color: whitesmoke;
 }
 
 .heading h2{
@@ -88,10 +95,23 @@ nav{
   padding: 1% 1% 1% 1%;
 }
 
+.grid2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+  padding: 1% 1% 1% 1%;
+}
+
+.grid2 .container{
+  border-radius: 10px;
+  border: 2px solid red;
+}
+
 .grid .container{
   border-radius: 10px;
   border: 2px solid navy;
 }
+
 
 .grid .container.green{
   border-radius: 10px;
