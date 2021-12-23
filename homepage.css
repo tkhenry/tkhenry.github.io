@@ -13,15 +13,6 @@ nav{
   z-index: 1;
 }
 
-.logo{
-  font-size: 25px;
-  font-weight: bold;
-  color: white;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  text-decoration: none;
-  user-select: none;
-}
-
 .name{
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   width: 500px;
@@ -37,7 +28,7 @@ nav{
 }
 
 #main{
-  width: 100%;
+  width: 100vw;
   height: 100vh;
   box-sizing: border-box;
   background-image: linear-gradient(lightgrey, whitesmoke);
@@ -64,21 +55,18 @@ nav{
 
 #resume{
   width: 100%;
-  height: 100vh;
   box-sizing: border-box;
   background-color: whitesmoke;
 }
 
 #projects{
   width: 100%;
-  height: 100vh;
   box-sizing: border-box;
   background-color: whitesmoke;
 }
 
 #research{
   width: 100%;
-  height: 100vh;
   box-sizing: border-box;
   background-color: whitesmoke;
 }
